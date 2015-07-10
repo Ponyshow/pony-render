@@ -1,6 +1,8 @@
 # pony-render
 
-> A full-featured markdown parser and compiler for rendering html-based Ponyshow files.
+> A full-featured markdown parser and compiler for rendering html-based Ponyshow files. Optimized for speed.
+
+Based on Kramed by Aaron O'Mullan and Marked by Christopher Jeffrey.
 
 ## Install
 
