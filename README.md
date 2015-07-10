@@ -13,7 +13,7 @@ npm install pony-render --save
 Minimal usage:
 
 ```js
-var Pony = require('../lib/main');
+var Pony = require('pony-render');
 console.log(Pony.render('I am using __markdown__.'));
 // Outputs: <p>I am using <strong>markdown</strong>.</p>
 ```
