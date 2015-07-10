@@ -1,25 +1,25 @@
 {
-  "name": "kramed-ponyshow",
-  "description": "A markdown (kramdown compatible) parser and compiler for rendering pony show files",
+  "name": "pony-render",
+  "description": "A markdown (kramdown compatible) parser and compiler for rendering Ponyshow files",
   "author": {
     "name": "TZ Martin"
   },
   "version": "0.0.1",
-  "main": "./lib/kramed-ponyshow.js",
+  "main": "./lib/main.js",
   "bin": {
-    "kramed-ponyshow": "./bin/kramed-ponyshow"
+    "pony-render": "./bin/main"
   },
   "man": [
-    "./man/kramed-ponyshow.1"
+    "./man/kramed.1"
   ],
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/semanticpress/kramed-ponyshow"
+    "url": "git://github.com/semanticpress/pony-render"
   },
-  "homepage": "https://github.com/semanticpress/kramed-ponyshow",
+  "homepage": "https://github.com/semanticpress/pony-render",
   "bugs": {
-    "url": "http://github.com/semanticpress/kramed-ponyshow/issues"
+    "url": "http://github.com/semanticpress/pony-render/issues"
   },
   "license": "MIT",
   "keywords": [
@@ -49,12 +49,12 @@
     "test": "node test",
     "bench": "node test --bench"
   },
-  "_id": "kramed-ponyshow@0.0.1",
+  "_id": "pony-render@0.0.1",
   "dist": {
     "shasum": "54dcb3f7c0ef7630872de833e107c5dd8bed2849",
-    "tarball": "http://registry.npmjs.org/kramed-ponyshow/-/kramed-ponyshow-0.0.1.tgz"
+    "tarball": "http://registry.npmjs.org/pony-render/-/pony-render-0.0.1.tgz"
   },
-  "_from": "kramed-ponyshow@*",
+  "_from": "pony-render@*",
   "_npmVersion": "1.4.6",
   "_npmUser": {
     "name": "tzmartin",
@@ -68,5 +68,5 @@
   ],
   "directories": {},
   "_shasum": "54dcb3f7c0ef7630872de833e107c5dd8bed2849",
-  "_resolved": "https://registry.npmjs.org/kramed-ponyshow/-/kramed-ponyshow-0.0.1.tgz"
+  "_resolved": "https://registry.npmjs.org/pony-render/-/pony-render-0.0.1.tgz"
 }

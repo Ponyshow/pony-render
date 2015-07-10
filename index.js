@@ -1,1 +1,1 @@
-module.exports = require('./lib/kramed-ponyshow');
+module.exports = require('./lib/main');

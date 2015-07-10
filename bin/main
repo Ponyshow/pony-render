@@ -11,7 +11,7 @@
 
 var fs = require('fs')
   , util = require('util')
-  , kramed = require('../');
+  , kramed = require('../lib/kramed');
 
 /**
  * Man Page
