@@ -1,8 +1,12 @@
 # pony-render
 
-> A full-featured markdown parser and compiler for rendering html-based Ponyshow files. Optimized for speed.
+A full-featured markdown-to-HTML parser for rendering Ponyshow (html-based) presentations.
 
-Based on Kramed by Aaron O'Mullan and Marked by Christopher Jeffrey.
+This is the core rendering engine for Ponyshow presentation app, based on Kramed by Aaron O'Mullan and Marked by Christopher Jeffrey.
+
+## Why?
+
+Creating slides and delivering quality presentations is often a painful process to manage, especially for technical presentations.  Markdown is great for writing content, but bad at presentations.  This project resolves this issue by rendering Markdown into HTML-based Ponyshow presentations (on the fly).
 
 ## Install
 
@@ -20,7 +24,27 @@ console.log(Pony.render('I am using __markdown__.'));
 // Outputs: <p>I am using <strong>markdown</strong>.</p>
 ```
 
-### Contribution and License Agreement
+## Properties
+
+### theme (string)
+
+## linenumbers (boolean)
+
+## Methods
+
+### setHeader()
+
+Sets a prefix string that is returned after tokens are parsed
+
+### setFooter()
+
+Sets a postfix string that is returned after tokens are parsed
+
+### render()
+
+Tokenizes markdown and parses into HTML.  If a header or footer was set, the strings will be concatenated into a final string response.
+
+## Contribution and License Agreement
 
 If you contribute code to this project, you are implicitly allowing your code
 to be distributed under the MIT license. You are also implicitly verifying that

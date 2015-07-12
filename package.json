@@ -1,6 +1,6 @@
 {
   "name": "pony-render",
-  "description": "A markdown (kramdown compatible) parser and compiler for rendering Ponyshow files",
+  "description": "A markdown-to-HTML (kramdown compatible) parser and compiler for rendering Ponyshow files",
   "author": {
     "name": "TZ Martin"
   },
@@ -46,8 +46,7 @@
     "robotskirt": "*"
   },
   "scripts": {
-    "test": "node test",
-    "bench": "node test --bench"
+    "test": "node test"
   },
   "_id": "pony-render@0.0.1",
   "dist": {
