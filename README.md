@@ -1,5 +1,7 @@
 # pony-render
 
+[![Get it on npm](https://nodei.co/npm/pony-render.png)](https://nodei.co/npm/pony-render/)
+
 A full-featured markdown-to-HTML parser for rendering Ponyshow (html-based) presentations.
 
 This is the core rendering engine for Ponyshow presentation app, based on Kramed by Aaron O'Mullan and Marked by Christopher Jeffrey.
