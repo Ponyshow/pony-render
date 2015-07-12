@@ -67,5 +67,8 @@
   ],
   "directories": {},
   "_shasum": "54dcb3f7c0ef7630872de833e107c5dd8bed2849",
-  "_resolved": "https://registry.npmjs.org/pony-render/-/pony-render-0.0.1.tgz"
+  "_resolved": "https://registry.npmjs.org/pony-render/-/pony-render-0.0.1.tgz",
+  "dependencies": {
+    "lodash": "^3.10.0"
+  }
 }

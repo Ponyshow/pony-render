@@ -9,6 +9,6 @@ fs.readFile('test.md', 'utf8', function (err,data) {
     return console.log(err);
   }
   
-  console.log(Pony.render(data));
+  console.log(Pony.render(data, {theme:"TEST"}));
   
 });
