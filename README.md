@@ -68,3 +68,7 @@ Marked: Copyright (c) 2011-2014, Christopher Jeffrey. (MIT License)
 Kramed: Copyright (c) 2014, Aaron O'Mullan. (MIT Licensed)
 
 See LICENSE for more info.
+
+<img
+src="http://c.statcounter.com/10534093/0/9ad73f33/1/"
+alt="website statistics" style="border:none;">
