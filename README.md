@@ -2,9 +2,13 @@
 
 [![Get it on npm](https://nodei.co/npm/pony-render.png)](https://nodei.co/npm/pony-render/)
 
-A full-featured markdown-to-HTML parser for rendering Ponyshow (html-based) presentations.
+A fast markdown-to-HTML tokenizer and HTML renderer for creating (html-based) presentations.  This is the core rendering engine for the [Ponyshow](http://github.com/PonyShow/ponyshow) presentation app and is compatible with the [Shower](https://github.com/shower/shower) HTML presentation library.
 
-This is the core rendering engine for Ponyshow presentation app, based on Kramed by Aaron O'Mullan and Marked by Christopher Jeffrey.
+Based on Kramed by Aaron O'Mullan and Marked by Christopher Jeffrey.
+
+## Displaying Content
+
+For viewing rendered output, use the [ponyshow-web-client](http://github.com/ponyshow/ponyshow-web-client) library.  This client library is optimized for `pony-render`.
 
 ## Why?
 
@@ -26,23 +30,28 @@ console.log(Pony.render('I am using __markdown__.'));
 // Outputs: <p>I am using <strong>markdown</strong>.</p>
 ```
 
-## Properties
+## API
 
-### theme (string)
+### Properties
 
-## linenumbers (boolean)
+- `theme`: 
+- `slidenumbers`: 
+- `timing`: 
+- `footer`: 
 
-## Methods
+### Methods
 
-### setHeader()
+#### `setHeader()`
 
 Sets a prefix string that is returned after tokens are parsed
 
-### setFooter()
+#### `setFooter()`
 
 Sets a postfix string that is returned after tokens are parsed
 
-### render()
+#### `render(<string> HTML, <object> properties)`
+  
+*Returns:* HTML
 
 Tokenizes markdown and parses into HTML.  If a header or footer was set, the strings will be concatenated into a final string response.
 
@@ -54,8 +63,8 @@ all code is your original work. `</legalese>`
 
 ## License
 
+Pony Render: Copyright (c) 2015, Semantic Press, Inc. (MIT Licensed)
 Marked: Copyright (c) 2011-2014, Christopher Jeffrey. (MIT License)
 Kramed: Copyright (c) 2014, Aaron O'Mullan. (MIT Licensed)
-Pony Render: Copyright (c) 2015, TZ Martin (MIT Licensed)
 
 See LICENSE for more info.
