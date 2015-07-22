@@ -8,7 +8,7 @@ Based on Kramed by Aaron O'Mullan and Marked by Christopher Jeffrey.
 
 ## Displaying Content
 
-For viewing rendered output, use the [ponyshow-web-client](http://github.com/ponyshow/ponyshow-web-client) library.  This client library is optimized for `pony-render`.
+For viewing rendered output, use the [ponyshow-web-client](http://github.com/ponyshow/ponyshow-web-client) library.  This client library is optimized for `pony-render` and includes an updated Shower library, Prism and default CSS files.
 
 ## Why?
 
@@ -36,8 +36,8 @@ console.log(Pony.render('I am using __markdown__.'));
 
 - `theme`: 
 - `slidenumbers`: 
-- `timing`: 
-- `footer`: 
+- `timing`: Set any value to automatically advance to the next slide after given time. 
+- `footer`: Set a string visible on each slide footer
 
 ### Methods
 
