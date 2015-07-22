@@ -1,6 +1,6 @@
 {
   "name": "pony-render",
-  "description": "A markdown-to-HTML (kramdown compatible) parser and compiler for rendering Ponyshow files",
+  "description": "A markdown-to-HTML tokenizer and parser for rendering Ponyshow files",
   "author": {
     "name": "TZ Martin"
   },
@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/semanticpress/pony-render",
   "bugs": {
-    "url": "http://github.com/semanticpress/pony-render/issues"
+    "url": "http://github.com/ponyshow/pony-render/issues"
   },
   "license": "MIT",
   "keywords": [
@@ -44,18 +44,7 @@
   },
   "scripts": {
     "test": "node test"
-  },
-  "_id": "pony-render@0.0.1",
-  "dist": {
-    "shasum": "54dcb3f7c0ef7630872de833e107c5dd8bed2849",
-    "tarball": "http://registry.npmjs.org/pony-render/-/pony-render-0.0.1.tgz"
-  },
-  "_from": "pony-render@*",
-  "_npmVersion": "1.4.6",
-  "_npmUser": {
-    "name": "tzmartin",
-    "email": "martin@semanticpress.com"
-  },
+  }
   "maintainers": [
     {
       "name": "tzmartin",
@@ -63,8 +52,6 @@
     }
   ],
   "directories": {},
-  "_shasum": "54dcb3f7c0ef7630872de833e107c5dd8bed2849",
-  "_resolved": "https://registry.npmjs.org/pony-render/-/pony-render-0.0.1.tgz",
   "dependencies": {
     "lodash": "^3.10.0"
   }
