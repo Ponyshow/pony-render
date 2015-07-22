@@ -9,9 +9,6 @@
   "bin": {
     "pony-render": "./bin/main"
   },
-  "man": [
-    "./man/kramed.1"
-  ],
   "preferGlobal": true,
   "repository": {
     "type": "git",
