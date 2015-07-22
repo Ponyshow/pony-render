@@ -12,7 +12,7 @@
   "preferGlobal": false,
   "repository": {
     "type": "git",
-    "url": "git://github.com/semanticpress/pony-render"
+    "url": "git://github.com/ponyshow/pony-render"
   },
   "homepage": "https://github.com/ponyshow/pony-render",
   "bugs": {
