@@ -22,34 +22,45 @@ npm install pony-render --save
 
 ## Usage
 
-Minimal usage:
+Simple usage:
 
 ```js
 var Pony = require('pony-render');
 console.log(Pony.render('I am using __markdown__.'));
 // Outputs: <p>I am using <strong>markdown</strong>.</p>
 ```
+## Syntax Docs
+
+The syntax supports markdown, kramdown and a wide range of additional tokens needed to keep content simple, yet offer flexible rendering. The docs are not yet available, but you can refer to the [Ponyshow Cheet Sheet](https://github.com/Ponyshow/deck-CheatSheet) to get an idea of what's possible.
+
+Official docs are in process.
 
 ## API
 
 ### Properties
 
-- `theme`: 
-- `slidenumbers`: 
+- `theme`: Set the theme name for custom rendering purposes
+- `slidenumbers`: true/false to hide/show slide numbers. Custom themes can override this.
 - `timing`: Set any value to automatically advance to the next slide after given time. 
-- `footer`: Set a string visible on each slide footer
+- `footer`: Set a string visible on each slide footer. Custom themes can override this.
+
+If you want additional properties please open a ticket.  Ideas are welcomed!  Or, (better yet) fork and send a pull request.
 
 ### Methods
 
-#### `setHeader()`
+#### `setHeader(<string> html)`
 
-Sets a prefix string that is returned after tokens are parsed
+Sets a prefix string to the final rendering object, after tokens are parsed.
 
-#### `setFooter()`
+*Returns:* **none**
 
-Sets a postfix string that is returned after tokens are parsed
+#### `setFooter(<string> html)`
 
-#### `render(<string> HTML, <object> properties)`
+Sets a postfix string to the final rendering object, after tokens are parsed.
+
+*Returns:* **none**
+
+#### `render(<string> html, <object> properties)`
   
 *Returns:* HTML
 
