@@ -2,17 +2,17 @@
 
 [![Get it on npm](https://nodei.co/npm/pony-render.png)](https://nodei.co/npm/pony-render/)
 
-A fast markdown-to-HTML tokenizer and HTML renderer for creating (html-based) presentations.  This is the core rendering engine for the [Ponyshow](http://github.com/PonyShow/ponyshow) presentation app and is compatible with the [Shower](https://github.com/shower/shower) HTML presentation library.
+A fast markdown tokenizer and renderer for creating beautiful HTML presentations.  This is the core rendering engine for [Ponyshow](http://github.com/PonyShow/ponyshow) presentation app and is compatible with the [Shower](https://github.com/shower/shower) HTML presentation library.
 
-Based on Kramed by Aaron O'Mullan and Marked by Christopher Jeffrey.
+Based on Kramed (Aaron O'Mullan) and Marked (Christopher Jeffrey), this rendering engine adds additional tokens for parsing embedded options and rendering logic for creating semantic HTML output.
 
 ## Displaying Content
 
-For viewing rendered output, use the [ponyshow-web-client](http://github.com/ponyshow/ponyshow-web-client) library.  This client library is optimized for `pony-render` and includes an updated Shower library, Prism and default CSS files.
+For viewing rendered output, you can use the [ponyshow-web-client](http://github.com/ponyshow/ponyshow-web-client) library or [Shower](https://github.com/shower/shower) framework.  The Ponyshow web client is the main client library for [Ponyshow](http://github.com/PonyShow/ponyshow) and is optimized for `pony-render`.  It includes a forked version of the Shower library, Prism and default CSS files.
 
 ## Why?
 
-Creating slides and delivering quality presentations is often a painful process to manage, especially for technical presentations.  Markdown is great for writing content, but bad at presentations.  This project resolves this issue by rendering Markdown into HTML-based Ponyshow presentations (on the fly).
+Creating slides and delivering quality presentations is often a painful process to manage, especially for technical presentations.  While markdown is great for writing content, it is bad for giving presentations.  This project resolves this issue by rendering Markdown into semantically correct HTML that conforms to presentation purposes.  It's also the heart of [Ponyshow](http://github.com/PonyShow/ponyshow).
 
 ## Install
 
