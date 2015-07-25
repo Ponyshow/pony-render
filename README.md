@@ -35,6 +35,41 @@ The syntax supports markdown, kramdown and a wide range of additional tokens nee
 
 Official docs are in process.
 
+
+## Error
+
+### Responses
+
+If a render fails, the response will be an html doc that contains a `rendererror` class that you can style to fit your needs.
+
+**Default output**
+
+```html
+<div class='rendererror'>
+  <img alt='pony error' /><br>
+  <div>Rendering error</div>
+</div>
+```
+
+**Custom HTML**
+
+You can set the `error` property to a custom string on initialization, within a `deck.md` or prior to rendering with a setter function.  This will override the default response structure while rendering.
+
+**Example**
+
+```javascript
+
+// init
+Pony.init({"error":"<img src='' />"})
+
+// setter function
+setError("<img src='' />");
+
+// in deck.md
+error: <img src='' />
+
+```
+
 ## API
 
 ### Properties
@@ -43,6 +78,7 @@ Official docs are in process.
 - `slidenumbers`: true/false to hide/show slide numbers. Custom themes can override this.
 - `timing`: Set any value to automatically advance to the next slide after given time. 
 - `footer`: Set a string visible on each slide footer. Custom themes can override this.
+- `error`: Set a fail string
 
 If you want additional properties please open a ticket.  Ideas are welcomed!  Or, (better yet) fork and send a pull request.
 
