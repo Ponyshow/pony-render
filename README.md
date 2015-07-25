@@ -46,8 +46,8 @@ If a render fails, the response will be an html doc that contains a `rendererror
 
 ```html
 <div class='rendererror'>
-  <img alt='pony error' /><br>
-  <div>Rendering error</div>
+  <div class='img' /><br>
+  <div class='text'>Rendering error</div>
 </div>
 ```
 
