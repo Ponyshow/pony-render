@@ -79,6 +79,7 @@ error: <img src='' />
 - `timing`: Set any value to automatically advance to the next slide after given time. 
 - `footer`: Set a string visible on each slide footer. Custom themes can override this.
 - `error`: Set a fail string
+- `tableclass`: Set the class name for a table. Example: `striped`
 
 If you want additional properties please open a ticket.  Ideas are welcomed!  Or, (better yet) fork and send a pull request.
 
