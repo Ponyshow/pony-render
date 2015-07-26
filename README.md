@@ -84,6 +84,7 @@ You can enable capabilities and configuration for a markdown file.  These proper
 - `tableclass <string>`: Set the class name for a table. Example: `striped`
 - `format <string>`: Set either `widescreen` (1920 x 1080) or `standard` (1024 x 768).  Default is `standard`.  It's possible to set a custom format by setting a custom property that specific themes will respond to.  The sets a class name to each slide `<section>`.
 - `progress <boolean>`: Show / hide the progress bar. Options: `true`|`false`
+- 'build-list': Allows you to step through list bullets one by one to keep your audience focused on what you’re currently talking about.
   
 >   If you want additional properties please open a ticket.  Ideas are welcomed!  Or, (better yet) fork and send a pull request.
 
