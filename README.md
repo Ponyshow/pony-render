@@ -72,16 +72,46 @@ error: <img src='' />
 
 ## API
 
-### Properties
+### Deck Configuration
 
-- `theme`: Set the theme name for custom rendering purposes
-- `slidenumbers`: true/false to hide/show slide numbers. Custom themes can override this.
-- `timing`: Set any value to automatically advance to the next slide after given time. 
-- `footer`: Set a string visible on each slide footer. Custom themes can override this.
-- `error`: Set a fail string
-- `tableclass`: Set the class name for a table. Example: `striped`
+You can enable capabilities and configuration for a markdown file.  These properties must be defined before any section `---` declaration.
 
-If you want additional properties please open a ticket.  Ideas are welcomed!  Or, (better yet) fork and send a pull request.
+- `theme <string>`: Set the theme name for custom rendering purposes
+- `slidenumbers <boolean>`: Hide/show slide numbers. Custom themes can override this. Options: `true`|`false`
+- `timing <integer>`: Set any value to automatically advance to the next slide after given time. 
+- `footer <string>`: Set a string visible on each slide footer. Custom themes can override this.
+- `error <string>`: Set a fail html string that will be displayed as the `innerText` value of the `rendererror` element.
+- `tableclass <string>`: Set the class name for a table. Example: `striped`
+- `format <string>`: Set either `widescreen` (1920 x 1080) or `standard` (1024 x 768).  Default is `standard`.  It's possible to set a custom format by setting a custom property that specific themes will respond to.  The sets a class name to each slide `<section>`.
+- `progress <boolean>`: Show / hide the progress bar. Options: `true`|`false`
+  
+>   If you want additional properties please open a ticket.  Ideas are welcomed!  Or, (better yet) fork and send a pull request.
+
+### Creating Slides
+
+A new slide is defined by three dashes `---`, typed on a single line, with an empty line above and below.
+
+Slides are rendered as `<section>` HTML nodes.
+
+You can set a `class` or `id` property as part of the triple dash.  Classes do NOT have a dot notation and are included by default.  IDs require a hash symbol.
+
+> Note: It's preferred to use classes for styling since you can have multiple classes defined.  IDs must be unique and are to URL navigation schemes.  Only use IDs if you are sure it will be uniquely referenced.
+
+**Examples**
+
+```
+
+---cover
+
+---section
+
+---#notes
+
+```
+
+This will produce three slides.
+
+
 
 ### Methods
 
