@@ -86,6 +86,7 @@ You can enable capabilities and configuration for a markdown file.  These proper
 - `progress <boolean>`: Show / hide the progress bar. Options: `true`|`false`
 - 'build-list': Allows you to step through list bullets one by one to keep your audience focused on what you’re currently talking about.
 - 'transition': Change the way slides transition.  Options: `fade` or none. Defaults to none.
+- 'shadows': Add drop shadows to images. Options: `true`|`false`. Defaults to `false`.
   
 >   If you want additional properties please open a ticket.  Ideas are welcomed!  Or, (better yet) fork and send a pull request.
 
