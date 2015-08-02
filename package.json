@@ -4,7 +4,7 @@
   "author": {
     "name": "TZ Martin"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./lib/main.js",
   "bin": {
     "pony-render": "./bin/main"
