@@ -114,6 +114,32 @@ You can set a `class` or `id` property as part of the triple dash.  Classes do N
 
 This will produce three slides.
 
+## Syntax
+
+### Code
+
+Supports bracket style notation for defining css classes and in-line style overrides.
+
+	// Class
+	```[customclass]javascript
+
+	```
+	
+	// Inline style
+	```[css color:red]javascript
+	```
+
+### Blockquotes
+
+Supports bracket style notation for defining css classes and in-line style overrides.
+
+```
+// Class
+>[tip] *Tip*: This is a special message that is styled by a custom theme
+
+// Inline style
+>[css color:red;] *Tip*: This is a special message that is styled inline. No theme needed.
+```
 
 
 ### Methods
